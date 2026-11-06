@@ -35,9 +35,13 @@
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
+    overflow-x: hidden;
     padding-left: max(0px, env(safe-area-inset-left, 0px));
     padding-right: max(0px, env(safe-area-inset-right, 0px));
+    /* espaço para barra CTA fixa no mobile */
+    padding-bottom: 80px;
   }
+  @media (min-width: 768px) { body { padding-bottom: 0; } }
 
   .inner {
     max-width: 1140px;
@@ -92,6 +96,8 @@
     line-height: 1;
   }
   .logo span { color: var(--gold); }
+  /* esconde botão do header no mobile — substituído pela barra fixa */
+  @media (max-width: 767px) { #header .btn-wa { display: none; } }
 
   /* ── BUTTONS ── */
   .btn-wa {
@@ -119,10 +125,11 @@
   /* ── HERO ── */
   #hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a52a8 100%);
-    padding-block: 64px 72px;
+    padding-block: 40px 52px;
     overflow: hidden;
     position: relative;
   }
+  @media (min-width: 768px) { #hero { padding-block: 64px 72px; } }
   #hero::before {
     content: '';
     position: absolute;
@@ -140,10 +147,10 @@
     .hero-grid { grid-template-columns: 1fr 1fr; }
   }
   .hero-headline {
-    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-size: clamp(1.6rem, 7vw, 3.2rem);
     color: #fff;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .hero-headline em {
     color: var(--gold);
@@ -579,6 +586,70 @@
 
   /* WA SVG icon inline */
   .wa-icon { width: 32px; height: 32px; }
+
+  /* ── MOBILE BOTTOM CTA BAR ── */
+  #mobile-cta-bar {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    #mobile-cta-bar {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0; right: 0;
+      z-index: 200;
+      background: var(--green);
+      padding: 14px max(16px, env(safe-area-inset-right, 0px)) calc(14px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 -4px 20px rgba(37,211,102,0.4);
+      text-decoration: none;
+    }
+    #mobile-cta-bar span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #fff;
+      letter-spacing: 0.3px;
+    }
+    /* esconde botão WA flutuante no mobile */
+    #wa-float { display: none; }
+
+    /* seções mais compactas no mobile */
+    section { padding-block: 48px; }
+    #proof { padding-block: 20px; }
+
+    /* proof items em coluna no mobile */
+    .proof-flex { gap: 16px; }
+    .proof-num { font-size: 1.5rem; }
+
+    /* steps em coluna no mobile */
+    .steps { grid-template-columns: 1fr; gap: 24px; max-width: 400px; margin: 0 auto; }
+    .step { flex-direction: row; text-align: left; }
+    .step-num { width: 48px; height: 48px; font-size: 1.3rem; flex-shrink: 0; }
+
+    /* cards edge-to-edge no mobile */
+    .benefits-grid { grid-template-columns: 1fr; gap: 14px; }
+    .benefit-card { padding: 22px 18px; }
+
+    .prod-grid { grid-template-columns: 1fr; gap: 14px; }
+    .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* forwho list coluna única */
+    .forwho-list { grid-template-columns: 1fr; }
+    .forwho-list li { font-size: 1rem; padding: 14px 18px; }
+
+    /* hero btn fullwidth */
+    .btn-wa.xl { font-size: 1.1rem; padding: 18px 24px; }
+
+    /* seals em coluna */
+    .seals { flex-direction: column; gap: 8px; }
+
+    /* cta-final */
+    #cta-final { padding-block: 56px; }
+    .cta-headline { font-size: 1.5rem; }
+  }
 </style>
 
 <!-- ═══════════════════════════════════════════════
@@ -922,6 +993,14 @@
     </p>
   </div>
 </footer>
+
+<!-- ═══════════════════════════════════════════════
+     MOBILE BOTTOM CTA BAR
+═══════════════════════════════════════════════ -->
+<a id="mobile-cta-bar" href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." target="_blank" rel="noopener" aria-label="Simular empréstimo no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="white" width="26" height="26" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
+  <span>SIMULAR GRÁTIS NO WHATSAPP</span>
+</a>
 
 <!-- ═══════════════════════════════════════════════
      FLOATING WHATSAPP BUTTON
