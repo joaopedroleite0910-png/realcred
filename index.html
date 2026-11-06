@@ -1,4 +1,5 @@
 <title>RealCred — Empréstimo Consignado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Empréstimo consignado para aposentados e pensionistas do INSS. Sem consulta ao SPC/Serasa, dinheiro na conta em até 24h, menor taxa do mercado.">
 
@@ -620,35 +621,57 @@
     section { padding-block: 48px; }
     #proof { padding-block: 20px; }
 
-    /* proof items em coluna no mobile */
-    .proof-flex { gap: 16px; }
-    .proof-num { font-size: 1.5rem; }
+    /* proof items em linha, 3 colunas iguais */
+    .proof-flex { gap: 8px; }
+    .proof-item { flex: 1 1 0; min-width: 0; }
+    .proof-num { font-size: 1.25rem; }
+    .proof-label { font-size: 0.75rem; }
 
-    /* steps em coluna no mobile */
-    .steps { grid-template-columns: 1fr; gap: 24px; max-width: 400px; margin: 0 auto; }
-    .step { flex-direction: row; text-align: left; }
-    .step-num { width: 48px; height: 48px; font-size: 1.3rem; flex-shrink: 0; }
+    /* hero: imagem abaixo do texto */
+    .hero-grid { grid-template-columns: 1fr !important; gap: 28px; }
+    .hero-img-wrap img { max-height: 280px; width: 100%; }
+    .float-card { right: 8px; bottom: 8px; padding: 10px 14px; }
+    .float-card .amount { font-size: 1rem; }
 
-    /* cards edge-to-edge no mobile */
-    .benefits-grid { grid-template-columns: 1fr; gap: 14px; }
-    .benefit-card { padding: 22px 18px; }
+    /* steps em coluna */
+    .steps { grid-template-columns: 1fr !important; gap: 20px; max-width: 100%; margin: 0; }
+    .step { flex-direction: row; text-align: left; gap: 16px; }
+    .step-num { width: 48px; height: 48px; font-size: 1.2rem; flex-shrink: 0; }
+    .step-title { font-size: 1rem; }
+    .step-text { font-size: 0.9rem; }
 
-    .prod-grid { grid-template-columns: 1fr; gap: 14px; }
-    .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+    /* cards em coluna única */
+    .benefits-grid { grid-template-columns: 1fr !important; gap: 12px; }
+    .benefit-card { padding: 20px 16px; text-align: left; flex-direction: row; display: flex; align-items: flex-start; gap: 14px; }
+    .benefit-icon { font-size: 2rem; margin-bottom: 0; flex-shrink: 0; }
+    .prod-grid { grid-template-columns: 1fr !important; gap: 12px; }
+    .testi-grid { grid-template-columns: 1fr !important; gap: 14px; }
 
-    /* forwho list coluna única */
-    .forwho-list { grid-template-columns: 1fr; }
-    .forwho-list li { font-size: 1rem; padding: 14px 18px; }
+    /* forwho lista coluna única */
+    .forwho-list { grid-template-columns: 1fr !important; gap: 10px; }
+    .forwho-list li { font-size: 0.95rem; padding: 12px 16px; }
+
+    /* title sizes */
+    .section-title { font-size: 1.5rem; margin-bottom: 28px; }
 
     /* hero btn fullwidth */
-    .btn-wa.xl { font-size: 1.1rem; padding: 18px 24px; }
+    .btn-wa.xl { font-size: 1rem; padding: 16px 20px; }
 
-    /* seals em coluna */
-    .seals { flex-direction: column; gap: 8px; }
+    /* seals em linha compacta */
+    .seals { gap: 6px 16px; }
+    .seal { font-size: 0.9rem; }
+
+    /* sub texto hero */
+    .hero-sub { font-size: 0.95rem; margin-bottom: 20px; }
 
     /* cta-final */
-    #cta-final { padding-block: 56px; }
-    .cta-headline { font-size: 1.5rem; }
+    #cta-final { padding-block: 48px; }
+    .cta-headline { font-size: 1.35rem; }
+    .cta-sub { font-size: 0.95rem; margin-bottom: 24px; }
+
+    /* faq */
+    .faq-q { font-size: 0.95rem; padding: 16px 18px; }
+    .faq-a.open { padding: 12px 18px 16px; }
   }
 </style>
 
