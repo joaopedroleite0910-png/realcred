@@ -1,14 +1,14 @@
-<title>RealCred — Empréstimo Consignado</title>
+﻿<title>RealCred â€” EmprÃ©stimo Consignado</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Empréstimo consignado para aposentados e pensionistas do INSS. Sem consulta ao SPC/Serasa, dinheiro na conta em até 24h, menor taxa do mercado.">
+<meta name="description" content="EmprÃ©stimo consignado para aposentados e pensionistas do INSS. Sem consulta ao SPC/Serasa, dinheiro na conta em atÃ© 24h, menor taxa do mercado.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
 <style>
-  /* ── Design tokens ── */
+  /* â”€â”€ Design tokens â”€â”€ */
   /* Layout: full-bleed sections stacked, two-col hero on desktop */
   :root {
     --navy: #0B3D91;
@@ -25,7 +25,7 @@
     color-scheme: light;
   }
 
-  /* Single-theme (light) — deliberate brand palette */
+  /* Single-theme (light) â€” deliberate brand palette */
 
   * { box-sizing: border-box; }
 
@@ -33,13 +33,13 @@
     background: var(--bg);
     color: var(--fg);
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
     margin: 0;
     overflow-x: hidden;
     padding-left: max(0px, env(safe-area-inset-left, 0px));
     padding-right: max(0px, env(safe-area-inset-right, 0px));
-    /* espaço para barra CTA fixa no mobile */
+    /* espaÃ§o para barra CTA fixa no mobile */
     padding-bottom: 80px;
   }
   @media (min-width: 768px) { body { padding-bottom: 0; } }
@@ -73,7 +73,7 @@
     .fade-up { opacity: 1; transform: none; transition: none; }
   }
 
-  /* ── HEADER ── */
+  /* â”€â”€ HEADER â”€â”€ */
   #header {
     position: sticky;
     top: env(safe-area-inset-top, 0px);
@@ -97,10 +97,10 @@
     line-height: 1;
   }
   .logo span { color: var(--gold); }
-  /* esconde botão do header no mobile — substituído pela barra fixa */
+  /* esconde botÃ£o do header no mobile â€” substituÃ­do pela barra fixa */
   @media (max-width: 767px) { #header .btn-wa { display: none; } }
 
-  /* ── BUTTONS ── */
+  /* â”€â”€ BUTTONS â”€â”€ */
   .btn-wa {
     display: inline-flex;
     align-items: center;
@@ -123,7 +123,7 @@
   .btn-wa.lg { font-size: 1.15rem; padding: 18px 32px; }
   .btn-wa.xl { font-size: 1.3rem; padding: 22px 40px; width: 100%; justify-content: center; }
 
-  /* ── HERO ── */
+  /* â”€â”€ HERO â”€â”€ */
   #hero {
     background: linear-gradient(135deg, var(--navy) 0%, #1a52a8 100%);
     padding-block: 40px 52px;
@@ -232,7 +232,7 @@
     .float-card { right: 8px; bottom: 12px; }
   }
 
-  /* ── PROOF BAR ── */
+  /* â”€â”€ PROOF BAR â”€â”€ */
   #proof {
     background: var(--navy);
     padding-block: 28px;
@@ -261,7 +261,7 @@
     margin-top: 4px;
   }
 
-  /* ── SECTIONS ── */
+  /* â”€â”€ SECTIONS â”€â”€ */
   section { padding-block: 72px; }
 
   .section-title {
@@ -273,7 +273,7 @@
   }
   .section-title span { color: var(--blue); }
 
-  /* ── BENEFITS ── */
+  /* â”€â”€ BENEFITS â”€â”€ */
   #benefits { background: var(--bg-white); }
   .benefits-grid {
     display: grid;
@@ -307,7 +307,7 @@
   }
   .benefit-text { color: var(--fg-muted); font-size: 0.95rem; }
 
-  /* ── FOR WHOM ── */
+  /* â”€â”€ FOR WHOM â”€â”€ */
   #forwho { background: linear-gradient(135deg, var(--navy) 0%, #1a52a8 100%); }
   #forwho .section-title { color: #fff; }
   .forwho-list {
@@ -333,7 +333,7 @@
     gap: 12px;
   }
   .forwho-list li::before {
-    content: '✓';
+    content: 'âœ“';
     background: var(--gold);
     color: var(--navy);
     width: 26px;
@@ -347,7 +347,7 @@
     flex-shrink: 0;
   }
 
-  /* ── HOW IT WORKS ── */
+  /* â”€â”€ HOW IT WORKS â”€â”€ */
   #howto { background: var(--bg-white); }
   .steps {
     display: grid;
@@ -386,7 +386,7 @@
   }
   .step-text { color: var(--fg-muted); font-size: 0.95rem; }
 
-  /* ── TESTIMONIALS ── */
+  /* â”€â”€ TESTIMONIALS â”€â”€ */
   #testimonials { background: var(--bg); }
   .testi-grid {
     display: grid;
@@ -422,7 +422,7 @@
   .testi-name { font-weight: 600; color: var(--navy); font-size: 0.95rem; }
   .testi-city { font-size: 0.85rem; color: var(--fg-muted); }
 
-  /* ── FAQ ── */
+  /* â”€â”€ FAQ â”€â”€ */
   #faq { background: var(--bg-white); }
   .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
   .faq-item {
@@ -461,7 +461,7 @@
   }
   .faq-a.open { max-height: 200px; padding: 16px 24px 20px; }
 
-  /* ── CTA FINAL ── */
+  /* â”€â”€ CTA FINAL â”€â”€ */
   #cta-final {
     background: linear-gradient(135deg, var(--navy) 0%, #1a52a8 100%);
     padding-block: 80px;
@@ -478,7 +478,7 @@
   .cta-btn-wrap { display: flex; justify-content: center; }
   .btn-wa.xl { max-width: 480px; }
 
-  /* ── FOOTER ── */
+  /* â”€â”€ FOOTER â”€â”€ */
   footer {
     background: #07295f;
     padding-block: 40px 32px;
@@ -496,7 +496,7 @@
   .footer-legal { color: rgba(255,255,255,0.45); font-size: 0.8rem; max-width: 600px; margin: 20px auto 0; line-height: 1.5; }
   .footer-wa { margin: 20px auto 0; display: flex; justify-content: center; }
 
-  /* ── PRODUCTS ── */
+  /* â”€â”€ PRODUCTS â”€â”€ */
   .prod-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -560,7 +560,7 @@
   .prod-limit strong { color: var(--navy); font-family: 'Poppins', sans-serif; font-weight: 800; }
   .prod-card .btn-wa.sm { width: 100%; justify-content: center; margin-top: 4px; }
 
-  /* ── FLOATING WA BUTTON ── */
+  /* â”€â”€ FLOATING WA BUTTON â”€â”€ */
   #wa-float {
     position: fixed;
     bottom: calc(28px + env(safe-area-inset-bottom, 0px));
@@ -588,7 +588,7 @@
   /* WA SVG icon inline */
   .wa-icon { width: 32px; height: 32px; }
 
-  /* ── MOBILE BOTTOM CTA BAR ── */
+  /* â”€â”€ MOBILE BOTTOM CTA BAR â”€â”€ */
   #mobile-cta-bar {
     display: none;
   }
@@ -614,10 +614,10 @@
       color: #fff;
       letter-spacing: 0.3px;
     }
-    /* esconde botão WA flutuante no mobile */
+    /* esconde botÃ£o WA flutuante no mobile */
     #wa-float { display: none; }
 
-    /* seções mais compactas no mobile */
+    /* seÃ§Ãµes mais compactas no mobile */
     section { padding-block: 48px; }
     #proof { padding-block: 20px; }
 
@@ -640,14 +640,14 @@
     .step-title { font-size: 1rem; }
     .step-text { font-size: 0.9rem; }
 
-    /* cards em coluna única */
+    /* cards em coluna Ãºnica */
     .benefits-grid { grid-template-columns: 1fr !important; gap: 12px; }
     .benefit-card { padding: 20px 16px; text-align: left; flex-direction: row; display: flex; align-items: flex-start; gap: 14px; }
     .benefit-icon { font-size: 2rem; margin-bottom: 0; flex-shrink: 0; }
     .prod-grid { grid-template-columns: 1fr !important; gap: 12px; }
     .testi-grid { grid-template-columns: 1fr !important; gap: 14px; }
 
-    /* forwho lista coluna única */
+    /* forwho lista coluna Ãºnica */
     .forwho-list { grid-template-columns: 1fr !important; gap: 10px; }
     .forwho-list li { font-size: 0.95rem; padding: 12px 16px; }
 
@@ -675,22 +675,22 @@
   }
 </style>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HEADER
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <header id="header" role="banner">
   <div class="inner">
     <div class="logo">Real<span>Cred</span></div>
-    <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
       <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
       <span>WHATSAPP</span>
     </a>
   </div>
 </header>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HERO
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="hero" aria-labelledby="hero-headline">
   <div class="inner">
     <div class="hero-grid">
@@ -700,35 +700,35 @@
           Seu dinheiro na conta <em>HOJE</em>, com a menor taxa do mercado.
         </h1>
         <p class="hero-sub">
-          Empréstimo consignado exclusivo para aposentados e pensionistas do INSS. Sem consulta ao SPC/Serasa. Parcelas que cabem no seu bolso, descontadas direto do benefício.
+          EmprÃ©stimo consignado exclusivo para aposentados e pensionistas do INSS. Sem consulta ao SPC/Serasa. Parcelas que cabem no seu bolso, descontadas direto do benefÃ­cio.
         </p>
         <div class="seals" role="list">
-          <span class="seal" role="listitem">✓ Dinheiro em até 24h</span>
-          <span class="seal" role="listitem">✓ Sem burocracia</span>
-          <span class="seal" role="listitem">✓ Atendimento humano</span>
+          <span class="seal" role="listitem">âœ“ Dinheiro em atÃ© 24h</span>
+          <span class="seal" role="listitem">âœ“ Sem burocracia</span>
+          <span class="seal" role="listitem">âœ“ Atendimento humano</span>
         </div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa xl" target="_blank" rel="noopener">
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa xl" target="_blank" rel="noopener">
           <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
-          QUERO SIMULAR AGORA (GRÁTIS)
+          QUERO SIMULAR AGORA (GRÃTIS)
         </a>
       </div>
 
       <!-- Right col: image -->
       <div class="hero-img-wrap fade-up" style="transition-delay:0.15s">
-        <img src="images.jpg" alt="Aposentado sorrindo ao usar o celular para acessar seu crédito consignado RealCred" width="520" height="480">
-        <div class="float-card" aria-label="Crédito aprovado">
-          <div class="check" aria-hidden="true">✓</div>
-          <div class="amount">R$ 50.000 liberados ✓</div>
+        <img src="images.jpg" alt="Aposentado sorrindo ao usar o celular para acessar seu crÃ©dito consignado RealCred" width="520" height="480">
+        <div class="float-card" aria-label="CrÃ©dito aprovado">
+          <div class="check" aria-hidden="true">âœ“</div>
+          <div class="amount">R$ 50.000 liberados âœ“</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      PROOF BAR
-═══════════════════════════════════════════════ -->
-<div id="proof" role="region" aria-label="Números da RealCred">
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div id="proof" role="region" aria-label="NÃºmeros da RealCred">
   <div class="inner">
     <div class="proof-flex">
       <div class="proof-item fade-up">
@@ -737,137 +737,137 @@
       </div>
       <div class="proof-item fade-up" style="transition-delay:0.1s">
         <span class="proof-num">R$ 200 mi</span>
-        <div class="proof-label">liberados em crédito</div>
+        <div class="proof-label">liberados em crÃ©dito</div>
       </div>
       <div class="proof-item fade-up" style="transition-delay:0.2s">
-        <span class="proof-num">4.9 ⭐</span>
-        <div class="proof-label">nota média no atendimento</div>
+        <span class="proof-num">4.9 â­</span>
+        <div class="proof-label">nota mÃ©dia no atendimento</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      BENEFITS
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="benefits" aria-labelledby="benefits-title">
   <div class="inner">
     <h2 class="section-title fade-up" id="benefits-title">Por que a <span>RealCred</span>?</h2>
     <div class="benefits-grid">
       <div class="benefit-card fade-up">
-        <span class="benefit-icon" aria-hidden="true">📉</span>
+        <span class="benefit-icon" aria-hidden="true">ðŸ“‰</span>
         <div class="benefit-title">Menor taxa do mercado</div>
-        <p class="benefit-text">Taxas a partir de 1,66% ao mês, as mais baixas autorizadas pelo INSS.</p>
+        <p class="benefit-text">Taxas a partir de 1,66% ao mÃªs, as mais baixas autorizadas pelo INSS.</p>
       </div>
       <div class="benefit-card fade-up" style="transition-delay:0.1s">
-        <span class="benefit-icon" aria-hidden="true">⚡</span>
-        <div class="benefit-title">Liberação rápida</div>
-        <p class="benefit-text">Aprovação simplificada e dinheiro na sua conta em até 24 horas.</p>
+        <span class="benefit-icon" aria-hidden="true">âš¡</span>
+        <div class="benefit-title">LiberaÃ§Ã£o rÃ¡pida</div>
+        <p class="benefit-text">AprovaÃ§Ã£o simplificada e dinheiro na sua conta em atÃ© 24 horas.</p>
       </div>
       <div class="benefit-card fade-up" style="transition-delay:0.2s">
-        <span class="benefit-icon" aria-hidden="true">📋</span>
-        <div class="benefit-title">Parcela no benefício</div>
-        <p class="benefit-text">O valor é descontado automaticamente. Você não corre risco de esquecer.</p>
+        <span class="benefit-icon" aria-hidden="true">ðŸ“‹</span>
+        <div class="benefit-title">Parcela no benefÃ­cio</div>
+        <p class="benefit-text">O valor Ã© descontado automaticamente. VocÃª nÃ£o corre risco de esquecer.</p>
       </div>
       <div class="benefit-card fade-up" style="transition-delay:0.3s">
-        <span class="benefit-icon" aria-hidden="true">🛡️</span>
+        <span class="benefit-icon" aria-hidden="true">ðŸ›¡ï¸</span>
         <div class="benefit-title">Seguro e sem pegadinha</div>
-        <p class="benefit-text">Empresa correspondente autorizada. Transparência total, do início ao fim.</p>
+        <p class="benefit-text">Empresa correspondente autorizada. TransparÃªncia total, do inÃ­cio ao fim.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FOR WHOM
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="forwho" aria-labelledby="forwho-title">
   <div class="inner">
     <h2 class="section-title fade-up" id="forwho-title">Feito para quem construiu a vida com trabalho.</h2>
     <ul class="forwho-list fade-up">
       <li>Aposentados do INSS</li>
       <li>Pensionistas do INSS</li>
-      <li>Quem quer trocar dívida cara por uma parcela menor (portabilidade)</li>
-      <li>Quem precisa de dinheiro para a família, saúde ou realizar um sonho</li>
+      <li>Quem quer trocar dÃ­vida cara por uma parcela menor (portabilidade)</li>
+      <li>Quem precisa de dinheiro para a famÃ­lia, saÃºde ou realizar um sonho</li>
     </ul>
     <div style="text-align:center; margin-top:40px;" class="fade-up">
-      <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa lg btn-forwho" target="_blank" rel="noopener">
+      <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa lg btn-forwho" target="_blank" rel="noopener">
         <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
-        QUERO SIMULAR GRÁTIS
+        QUERO SIMULAR GRÃTIS
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      LOAN PRODUCTS
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="produtos" aria-labelledby="produtos-title" style="background: var(--bg-white);">
   <div class="inner">
-    <h2 class="section-title fade-up" id="produtos-title">Modalidades de <span>empréstimo</span> disponíveis</h2>
-    <p style="text-align:center; color:var(--fg-muted); font-size:1.05rem; margin-top:-28px; margin-bottom:16px;" class="fade-up">Atendemos diferentes perfis. Veja qual é o seu:</p>
+    <h2 class="section-title fade-up" id="produtos-title">Modalidades de <span>emprÃ©stimo</span> disponÃ­veis</h2>
+    <p style="text-align:center; color:var(--fg-muted); font-size:1.05rem; margin-top:-28px; margin-bottom:16px;" class="fade-up">Atendemos diferentes perfis. Veja qual Ã© o seu:</p>
 
     <div style="text-align:center; margin-bottom:36px;" class="fade-up">
       <span style="display:inline-block; background:var(--navy); color:var(--gold); font-family:'Poppins',sans-serif; font-size:1.15rem; font-weight:700; padding:10px 28px; border-radius:50px; letter-spacing:0.3px;">
-        👴 Empréstimo para Idosos até 85 anos
+        ðŸ‘´ EmprÃ©stimo para Idosos atÃ© 85 anos
       </span>
     </div>
 
     <div class="prod-grid fade-up">
 
-      <!-- 13º APOSENTADO -->
+      <!-- 13Âº APOSENTADO -->
       <div class="prod-card prod-featured">
         <div class="prod-badge">Mais popular</div>
-        <span class="prod-icon" aria-hidden="true">🎁</span>
-        <div class="prod-name">Empréstimo 13º do Aposentado e Pensionista</div>
-        <div class="prod-desc">Para quem recebe 13º — pode receber até R$ 25.000 na conta.</div>
-        <div class="prod-limit">Até <strong>R$ 25.000</strong></div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20do%2013%C2%BA%20do%20aposentado%2Fpensionista%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grátis</a>
+        <span class="prod-icon" aria-hidden="true">ðŸŽ</span>
+        <div class="prod-name">EmprÃ©stimo do Aposentado e Pensionista</div>
+        <div class="prod-desc">Para aposentados e pensionistas do INSS, pode receber um emprÃ©stimo de atÃ© 25 mil reais na conta.</div>
+        <div class="prod-limit">AtÃ© <strong>R$ 25.000</strong></div>
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20do%2013%C2%BA%20do%20aposentado%2Fpensionista%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grÃ¡tis</a>
       </div>
 
       <!-- LOAS / BPC -->
       <div class="prod-card">
-        <span class="prod-icon" aria-hidden="true">🤝</span>
+        <span class="prod-icon" aria-hidden="true">ðŸ¤</span>
         <div class="prod-name">LOAS / BPC</div>
-        <div class="prod-desc">Benefício de Prestação Continuada. Crédito exclusivo para beneficiários do BPC/LOAS.</div>
-        <div class="prod-limit">Até <strong>R$ 21.000</strong></div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20LOAS%2FBPC%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grátis</a>
+        <div class="prod-desc">BenefÃ­cio de PrestaÃ§Ã£o Continuada. CrÃ©dito exclusivo para beneficiÃ¡rios do BPC/LOAS.</div>
+        <div class="prod-limit">AtÃ© <strong>R$ 21.000</strong></div>
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20LOAS%2FBPC%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grÃ¡tis</a>
       </div>
 
-      <!-- BOLSA FAMÍLIA -->
+      <!-- BOLSA FAMÃLIA -->
       <div class="prod-card">
-        <span class="prod-icon" aria-hidden="true">💚</span>
-        <div class="prod-name">Bolsa Família</div>
-        <div class="prod-desc">Crédito para beneficiários do Bolsa Família. Rápido, seguro e sem burocracia.</div>
+        <span class="prod-icon" aria-hidden="true">ðŸ’š</span>
+        <div class="prod-name">Bolsa FamÃ­lia</div>
+        <div class="prod-desc">CrÃ©dito para beneficiÃ¡rios do Bolsa FamÃ­lia. RÃ¡pido, seguro e sem burocracia.</div>
         <div class="prod-limit">Consulte <strong>sua margem</strong></div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20Bolsa%20Fam%C3%ADlia%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grátis</a>
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20Bolsa%20Fam%C3%ADlia%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grÃ¡tis</a>
       </div>
 
-      <!-- ENERGIA ELÉTRICA -->
+      <!-- ENERGIA ELÃ‰TRICA -->
       <div class="prod-card">
-        <span class="prod-icon" aria-hidden="true">⚡</span>
-        <div class="prod-name">Crédito Energia Elétrica</div>
-        <div class="prod-desc">Parcela descontada na fatura de energia. Sem cartão, sem conta bancária.</div>
+        <span class="prod-icon" aria-hidden="true">âš¡</span>
+        <div class="prod-name">CrÃ©dito Energia ElÃ©trica</div>
+        <div class="prod-desc">Parcela descontada na fatura de energia. Sem cartÃ£o, sem conta bancÃ¡ria.</div>
         <div class="prod-limit">Consulte <strong>sua margem</strong></div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20por%20energia%20el%C3%A9trica%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grátis</a>
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20empr%C3%A9stimo%20por%20energia%20el%C3%A9trica%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grÃ¡tis</a>
       </div>
 
-      <!-- FGTS / SAQUE ANIVERSÁRIO -->
+      <!-- FGTS / SAQUE ANIVERSÃRIO -->
       <div class="prod-card">
-        <span class="prod-icon" aria-hidden="true">💰</span>
-        <div class="prod-name">FGTS — Saque Aniversário</div>
-        <div class="prod-desc">Antecipe seu saque aniversário do FGTS. Dinheiro na conta, sem desconto no salário.</div>
+        <span class="prod-icon" aria-hidden="true">ðŸ’°</span>
+        <div class="prod-name">FGTS â€” Saque AniversÃ¡rio</div>
+        <div class="prod-desc">Antecipe seu saque aniversÃ¡rio do FGTS. Dinheiro na conta, sem desconto no salÃ¡rio.</div>
         <div class="prod-limit">Consulte <strong>seu saldo</strong></div>
-        <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20antecipa%C3%A7%C3%A3o%20do%20FGTS%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grátis</a>
+        <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20antecipa%C3%A7%C3%A3o%20do%20FGTS%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">Simular grÃ¡tis</a>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HOW IT WORKS
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="howto" aria-labelledby="howto-title">
   <div class="inner">
     <h2 class="section-title fade-up" id="howto-title">Como <span>funciona</span>?</h2>
@@ -875,31 +875,31 @@
       <div class="step fade-up">
         <div class="step-num" aria-hidden="true">1</div>
         <div class="step-title">Fale no WhatsApp</div>
-        <p class="step-text">Clique no botão e seja atendido por um consultor especializado, agora mesmo.</p>
+        <p class="step-text">Clique no botÃ£o e seja atendido por um consultor especializado, agora mesmo.</p>
       </div>
       <div class="step fade-up" style="transition-delay:0.15s">
         <div class="step-num" aria-hidden="true">2</div>
         <div class="step-title">Envie seus dados</div>
-        <p class="step-text">Rápido, simples e 100% seguro. Apenas o básico para liberar seu crédito.</p>
+        <p class="step-text">RÃ¡pido, simples e 100% seguro. Apenas o bÃ¡sico para liberar seu crÃ©dito.</p>
       </div>
       <div class="step fade-up" style="transition-delay:0.3s">
         <div class="step-num" aria-hidden="true">3</div>
         <div class="step-title">Receba o dinheiro</div>
-        <p class="step-text">O valor cai direto na sua conta em até 24 horas. Sem complicação.</p>
+        <p class="step-text">O valor cai direto na sua conta em atÃ© 24 horas. Sem complicaÃ§Ã£o.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      TESTIMONIALS
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="testimonials" aria-labelledby="testi-title">
   <div class="inner">
     <h2 class="section-title fade-up" id="testi-title">O que nossos <span>clientes</span> dizem</h2>
     <div class="testi-grid">
       <article class="testi-card fade-up">
-        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
+        <div class="testi-stars" aria-label="5 estrelas">â˜…â˜…â˜…â˜…â˜…</div>
         <p class="testi-text">"Consegui reformar minha casa e ainda sobrou. O atendimento foi maravilhoso, me senti tratada com muito respeito."</p>
         <div class="testi-author">
           <img src="foto-maria.jpg" alt="Maria S., cliente RealCred" class="testi-photo">
@@ -910,23 +910,23 @@
         </div>
       </article>
       <article class="testi-card fade-up" style="transition-delay:0.15s">
-        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
-        <p class="testi-text">"Em um dia o dinheiro estava na conta. Nunca fui tão bem tratado. Equipe super atenciosa e honesta."</p>
+        <div class="testi-stars" aria-label="5 estrelas">â˜…â˜…â˜…â˜…â˜…</div>
+        <p class="testi-text">"Em um dia o dinheiro estava na conta. Nunca fui tÃ£o bem tratado. Equipe super atenciosa e honesta."</p>
         <div class="testi-author">
-          <img src="foto-joao.jpg" alt="João P., cliente RealCred" class="testi-photo">
+          <img src="foto-joao.jpg" alt="JoÃ£o P., cliente RealCred" class="testi-photo">
           <div>
-            <div class="testi-name">João P.</div>
+            <div class="testi-name">JoÃ£o P.</div>
             <div class="testi-city">Belo Horizonte, MG</div>
           </div>
         </div>
       </article>
       <article class="testi-card fade-up" style="transition-delay:0.3s">
-        <div class="testi-stars" aria-label="5 estrelas">★★★★★</div>
-        <p class="testi-text">"Troquei três dívidas por uma parcela só, bem menor. Minha vida financeira mudou completamente. Recomendo!"</p>
+        <div class="testi-stars" aria-label="5 estrelas">â˜…â˜…â˜…â˜…â˜…</div>
+        <p class="testi-text">"Troquei trÃªs dÃ­vidas por uma parcela sÃ³, bem menor. Minha vida financeira mudou completamente. Recomendo!"</p>
         <div class="testi-author">
-          <img src="foto-antonio.jpg" alt="Antônio R., cliente RealCred" class="testi-photo">
+          <img src="foto-antonio.jpg" alt="AntÃ´nio R., cliente RealCred" class="testi-photo">
           <div>
-            <div class="testi-name">Antônio R.</div>
+            <div class="testi-name">AntÃ´nio R.</div>
             <div class="testi-city">Curitiba, PR</div>
           </div>
         </div>
@@ -935,9 +935,9 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FAQ
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="faq" aria-labelledby="faq-title">
   <div class="inner">
     <h2 class="section-title fade-up" id="faq-title">Perguntas <span>frequentes</span></h2>
@@ -948,16 +948,16 @@
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="faq-a1" role="region">
-          Não! No crédito consignado, não consultamos SPC nem Serasa. A aprovação é feita com base na sua margem consignável do INSS, não no histórico de crédito.
+          NÃ£o! No crÃ©dito consignado, nÃ£o consultamos SPC nem Serasa. A aprovaÃ§Ã£o Ã© feita com base na sua margem consignÃ¡vel do INSS, nÃ£o no histÃ³rico de crÃ©dito.
         </div>
       </div>
       <div class="faq-item fade-up">
         <button class="faq-q" aria-expanded="false" aria-controls="faq-a2">
-          É seguro contratar pela RealCred?
+          Ã‰ seguro contratar pela RealCred?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="faq-a2" role="region">
-          Sim, é totalmente seguro. A RealCred atua como correspondente bancário autorizado. O desconto é feito oficialmente pelo INSS, direto no seu benefício, sem surpresas.
+          Sim, Ã© totalmente seguro. A RealCred atua como correspondente bancÃ¡rio autorizado. O desconto Ã© feito oficialmente pelo INSS, direto no seu benefÃ­cio, sem surpresas.
         </div>
       </div>
       <div class="faq-item fade-up">
@@ -966,7 +966,7 @@
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="faq-a3" role="region">
-          O valor depende da sua margem consignável, que é calculada com base no seu benefício do INSS. Faça uma simulação gratuita pelo WhatsApp e descubra agora.
+          O valor depende da sua margem consignÃ¡vel, que Ã© calculada com base no seu benefÃ­cio do INSS. FaÃ§a uma simulaÃ§Ã£o gratuita pelo WhatsApp e descubra agora.
         </div>
       </div>
       <div class="faq-item fade-up">
@@ -975,22 +975,22 @@
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="faq-a4" role="region">
-          Absolutamente zero. A simulação é gratuita e sem compromisso. Você só decide se quiser contratar após ver todas as condições com clareza.
+          Absolutamente zero. A simulaÃ§Ã£o Ã© gratuita e sem compromisso. VocÃª sÃ³ decide se quiser contratar apÃ³s ver todas as condiÃ§Ãµes com clareza.
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      CTA FINAL
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="cta-final" aria-labelledby="cta-title">
   <div class="inner">
-    <h2 class="cta-headline fade-up" id="cta-title">Não deixe seu dinheiro parado.<br><em>Simule agora — é grátis e sem compromisso.</em></h2>
-    <p class="cta-sub fade-up">Atendimento humano. Sem robôs. Sem letra miúda.</p>
+    <h2 class="cta-headline fade-up" id="cta-title">NÃ£o deixe seu dinheiro parado.<br><em>Simule agora â€” Ã© grÃ¡tis e sem compromisso.</em></h2>
+    <p class="cta-sub fade-up">Atendimento humano. Sem robÃ´s. Sem letra miÃºda.</p>
     <div class="cta-btn-wrap fade-up">
-      <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa xl" target="_blank" rel="noopener">
+      <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa xl" target="_blank" rel="noopener">
         <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
         FALAR COM A REALCRED NO WHATSAPP
       </a>
@@ -998,43 +998,43 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FOOTER
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer>
   <div class="inner">
     <div class="footer-logo">Real<span>Cred</span></div>
-    <p class="footer-tagline">Crédito consignado com respeito a quem merece.</p>
+    <p class="footer-tagline">CrÃ©dito consignado com respeito a quem merece.</p>
     <div class="footer-wa">
-      <a href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">
+      <a href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." class="btn-wa sm" target="_blank" rel="noopener">
         <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
         FALAR NO WHATSAPP
       </a>
     </div>
     <p class="footer-legal">
-      RealCred atua como correspondente bancário. Operação sujeita a análise de margem consignável. As condições apresentadas podem variar conforme perfil do cliente e instituição financeira parceira.
+      RealCred atua como correspondente bancÃ¡rio. OperaÃ§Ã£o sujeita a anÃ¡lise de margem consignÃ¡vel. As condiÃ§Ãµes apresentadas podem variar conforme perfil do cliente e instituiÃ§Ã£o financeira parceira.
     </p>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      MOBILE BOTTOM CTA BAR
-═══════════════════════════════════════════════ -->
-<a id="mobile-cta-bar" href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." target="_blank" rel="noopener" aria-label="Simular empréstimo no WhatsApp">
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<a id="mobile-cta-bar" href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." target="_blank" rel="noopener" aria-label="Simular emprÃ©stimo no WhatsApp">
   <svg viewBox="0 0 32 32" fill="white" width="26" height="26" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
-  <span>SIMULAR GRÁTIS NO WHATSAPP</span>
+  <span>SIMULAR GRÃTIS NO WHATSAPP</span>
 </a>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FLOATING WHATSAPP BUTTON
-═══════════════════════════════════════════════ -->
-<a id="wa-float" href="https://wa.me/5573988263084?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." target="_blank" rel="noopener" aria-label="Falar com a RealCred no WhatsApp">
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<a id="wa-float" href="https://wa.me/5573999723886?text=Ol%C3%A1!%20Quero%20simular%20meu%20empr%C3%A9stimo%20consignado%20na%20RealCred." target="_blank" rel="noopener" aria-label="Falar com a RealCred no WhatsApp">
   <svg viewBox="0 0 32 32" fill="white" width="34" height="34" aria-hidden="true"><path d="M16 2.933C8.808 2.933 2.933 8.808 2.933 16c0 2.312.616 4.481 1.693 6.355L2.4 29.067l6.907-1.813A13.016 13.016 0 0016 29.067C23.192 29.067 29.067 23.192 29.067 16S23.192 2.933 16 2.933zm0 2.133C22.027 5.067 26.933 9.973 26.933 16S22.027 26.933 16 26.933a10.88 10.88 0 01-5.44-1.44l-.387-.24-4.08 1.067 1.093-3.973-.267-.4A10.843 10.843 0 015.067 16C5.067 9.973 9.973 5.067 16 5.067zm-3.52 5.013c-.24 0-.64.093-.987.467-.347.373-1.307 1.28-1.307 3.12 0 1.84 1.333 3.613 1.52 3.853.187.24 2.56 4.08 6.32 5.573 3.76 1.493 3.76.987 4.44.933.68-.053 2.187-.88 2.507-1.733.32-.853.32-1.573.213-1.72-.107-.16-.373-.253-.8-.467-.427-.213-2.187-1.08-2.533-1.2-.347-.12-.613-.187-.853.187-.24.373-.88 1.2-1.08 1.44-.187.24-.373.267-.8.08-.427-.187-1.787-.653-3.413-2.107-1.253-1.12-2.1-2.507-2.347-2.933-.24-.427-.027-.64.173-.853.187-.187.427-.48.64-.72.213-.24.267-.413.4-.667.133-.253.067-.48-.027-.667-.093-.187-.827-2.027-1.147-2.773-.293-.693-.6-.627-.853-.627z"/></svg>
 </a>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      JS: scroll animations + FAQ accordion
-═══════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <script>
   // Intersection Observer for fade-up
   const observer = new IntersectionObserver((entries) => {
@@ -1057,3 +1057,4 @@
     });
   });
 </script>
+
